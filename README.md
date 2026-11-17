@@ -1,12 +1,14 @@
 <div align="center">
 
-<img src="public/tailtheme.png" alt="TailTheme logo" width="72" height="72" />
+![TailTheme — design system and dashboard overview](./banner.png)
 
 # TailTheme React Full
 
-Open-source React admin template with a full demo, design-system gallery, and local project exporter.
+**The complete collection of dashboards, product pages, and UI patterns — ready to make your own.**
 
-[Website](https://tailtheme.dev) · [Figma](https://www.figma.com/design/OjGoqhtHI9gzspszsDQ7Va/TailTheme-Web) · [Documentation](#documentation) · [Lite](../tailtheme-reactjs-lite)
+Build dashboards, SaaS consoles, and internal tools with React, TypeScript, Vite, and Tailwind CSS. **Free and open source. MIT licensed.**
+
+[Website](https://tailtheme.dev) · [Live demo](https://tailtheme-demo.ezway.tech) · [Figma](https://www.figma.com/design/OjGoqhtHI9gzspszsDQ7Va/TailTheme-Web) · [Documentation](#documentation) · [Lite edition](https://github.com/ezway-tech/tailtheme-reactjs-lite)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
@@ -14,6 +16,10 @@ Open-source React admin template with a full demo, design-system gallery, and lo
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
 </div>
+
+<sub>Original TailTheme brand preview. The image shows the wider design collection; the features included in this React Full edition are listed below.</sub>
+
+---
 
 ## Overview
 
@@ -33,18 +39,25 @@ Both editions are **free**, **MIT**, and share the same design system. They diff
 
 Lite is refreshed from this repository with `npm run sync:lite` (preset `lite`). The separate `minimal` preset is a small Home/Form starter for `create:project` exports — not the public Lite edition.
 
-## What's included
+## 📦 What's included
 
-- App shell with sidebar, header utilities, theming, and i18n
-- Sample dashboards and vertical pages (SaaS, Project, and more)
-- UI component gallery and token documentation pages under `/app/ui`
-- Auth, settings, profile, and marketing sample screens (UI only)
-- Semantic design tokens in `src/styles/globals.css`
-- Local project exporter (`tools/create-project`)
+| Area                 | What you get                                                                                     |
+| -------------------- | ------------------------------------------------------------------------------------------------ |
+| **Dashboards**       | Overview, SaaS, Project, and industry dashboard examples                                         |
+| **Product pages**    | Education, commerce, SaaS, finance, project, health, social, marketing, vehicle, and CRM samples |
+| **UI components**    | Reusable primitives, advanced inputs, data tables, charts, and pattern showcases                 |
+| **App shell**        | Responsive navigation, breadcrumbs, command palette, and header utilities                        |
+| **Appearance**       | Semantic design tokens, light/dark themes, and theme preferences                                 |
+| **Account screens**  | Authentication, profile, and settings examples                                                   |
+| **Design resources** | Figma foundations and reference components                                                       |
 
-## Quick start
+> Authentication and sample data are frontend demonstrations. Connect your own backend for a real application.
 
-Requires **Node.js 18+** (Vite 6) and npm.
+---
+
+## 🚀 Quick start
+
+Use **Node.js 22 LTS** and npm.
 
 ```bash
 npm install
@@ -75,7 +88,7 @@ npm run build
 
 Longer walkthrough: [`docs/customization.md`](docs/customization.md).
 
-## Documentation
+## 📖 Documentation
 
 | Doc                                                          | Description                 |
 | ------------------------------------------------------------ | --------------------------- |
@@ -90,11 +103,11 @@ Longer walkthrough: [`docs/customization.md`](docs/customization.md).
 
 In-app UI gallery (after `npm run dev`): `/app/ui` — this is an app route, not a GitHub docs path.
 
-## Figma
+## 🎨 Figma
 
 Design file: [TailTheme Web](https://www.figma.com/design/OjGoqhtHI9gzspszsDQ7Va/TailTheme-Web)
 
-Covers foundations, theme variables, and reference components aligned with this template. Pixel-perfect parity with every screen is **not** claimed without a dedicated audit. Public view/duplicate access: confirm in Figma (not verified here). See [`docs/figma-tailtheme-web.md`](docs/figma-tailtheme-web.md).
+Explore foundations, theme variables, and reference components alongside the React implementation. See [`docs/figma-tailtheme-web.md`](docs/figma-tailtheme-web.md).
 
 ## Scripts
 
@@ -115,7 +128,7 @@ Covers foundations, theme variables, and reference components aligned with this 
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). Shared UI, tokens, generator, and docs belong in **this** repository so Lite can stay regeneratable.
 
-## Support the project
+## ☕ Support the project
 
 TailTheme is free and open source. If it saves you time, consider supporting its maintenance. Starring the repository, reporting bugs, improving the docs, and sharing it also help.
 
@@ -126,3 +139,11 @@ TailTheme is free and open source. If it saves you time, consider supporting its
 MIT — Copyright (c) 2026 **Ezway Tech**. TailTheme is the product name.
 
 See [`LICENSE`](LICENSE). Third-party notices: [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+---
+
+<div align="center">
+
+Built by **Ezway Tech** · [Website](https://tailtheme.dev) · [Figma](https://www.figma.com/design/OjGoqhtHI9gzspszsDQ7Va/TailTheme-Web) · [MIT License](LICENSE)
+
+</div>
