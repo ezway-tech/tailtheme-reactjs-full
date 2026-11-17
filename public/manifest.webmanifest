@@ -1,0 +1,16 @@
+{
+  "name": "TailTheme",
+  "short_name": "TailTheme",
+  "description": "React + Tailwind admin template with dashboards, themed pages, and UI showcase.",
+  "start_url": "/landing",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#1b6ca1",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

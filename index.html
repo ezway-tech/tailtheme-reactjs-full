@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TailTheme — production-ready React admin template with Tailwind CSS v4, dashboards, and themed sample apps."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TailTheme" />
+    <meta
+      property="og:description"
+      content="React + Tailwind admin template with 11 verticals, UI showcase, and runtime theming."
+    />
+    <meta property="og:image" content="/og.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>TailTheme</title>
+    <!-- Load global styles before the JS bundle so the first paint is not unstyled. -->
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+    <style>
+      html {
+        color-scheme: light;
+      }
+      html.dark {
+        color-scheme: dark;
+      }
+      html,
+      body,
+      #root {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: 0;
+        box-shadow: none;
+        background-color: #f9fafb;
+      }
+      html.dark,
+      html.dark body,
+      html.dark #root {
+        background-color: #0f1419;
+      }
+      html:focus,
+      html:focus-visible,
+      body:focus,
+      body:focus-visible,
+      #root:focus,
+      #root:focus-visible {
+        outline: none !important;
+      }
+      html[data-app-route],
+      html[data-app-route] body,
+      html[data-app-route] #root {
+        height: 100%;
+        min-height: 100svh;
+        overflow: hidden;
+      }
+    </style>
+    <script>
+      (function () {
+        var key = 'tailtheme-theme';
+        var theme = localStorage.getItem(key) || 'system';
+        var dark =
+          theme === 'dark' ||
+          (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        var docEl = document.documentElement;
+        var surface = dark ? '#0f1419' : '#f9fafb';
+        if (dark) {
+          docEl.classList.add('dark');
+          docEl.setAttribute('data-theme', 'dark');
+        } else {
+          docEl.classList.remove('dark');
+          docEl.setAttribute('data-theme', 'light');
+        }
+        docEl.style.backgroundColor = surface;
+        document.body.style.backgroundColor = surface;
+        var appRoot = document.getElementById('root');
+        if (appRoot) {
+          appRoot.style.backgroundColor = surface;
+        }
+        if (/^\/app(\/|$)/.test(location.pathname)) {
+          docEl.setAttribute('data-app-route', '');
+          docEl.style.overflow = 'hidden';
+          docEl.style.height = '100%';
+          document.body.style.overflow = 'hidden';
+          document.body.style.height = '100%';
+          if (appRoot) {
+            appRoot.style.height = '100%';
+            appRoot.style.minHeight = '100%';
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "id": "project",
+  "description": "Project management sample pages (kanban, list, detail, calendar) and project dashboard.",
+  "dependsOn": ["core"],
+  "files": [
+    "src/pages/pages/project/**/*",
+    "src/pages/dashboards/project-dashboard-page.tsx",
+    "src/components/ui/calendar.tsx",
+    "src/components/ui/date-picker.tsx"
+  ],
+  "exclude": ["**/*.figma.tsx", "**/*.test.tsx", "**/*.test.ts", "**/__tests__/**"],
+  "emitUiBarrel": ["calendar", "date-picker"],
+  "packageDependencies": ["date-fns", "react-day-picker", "@radix-ui/react-popover", "recharts"],
+  "packageDevDependencies": [],
+  "routes": {
+    "entries": [
+      {
+        "id": "dashboards.project",
+        "path": "dashboards/project",
+        "import": "@/pages/dashboards/project-dashboard-page",
+        "breadcrumb": "Project dashboard",
+        "nav": {
+          "section": "top",
+          "labelKey": "nav.dashboards.project",
+          "fallback": "Project dashboard",
+          "icon": "FolderKanban"
+        }
+      },
+      {
+        "id": "pages.project.kanban",
+        "path": "pages/project/kanban",
+        "import": "@/pages/pages/project/kanban-page",
+        "breadcrumb": "Kanban",
+        "nav": {
+          "section": "pages",
+          "group": "project",
+          "groupLabel": "Project",
+          "labelKey": "nav.pages.project.kanban",
+          "fallback": "Kanban",
+          "icon": "Columns3"
+        }
+      },
+      {
+        "id": "pages.project.projects",
+        "path": "pages/project/projects",
+        "import": "@/pages/pages/project/projects-list-page",
+        "breadcrumb": "Projects",
+        "nav": {
+          "section": "pages",
+          "group": "project",
+          "groupLabel": "Project",
+          "labelKey": "nav.pages.project.list",
+          "fallback": "Projects",
+          "icon": "List"
+        }
+      },
+      {
+        "id": "pages.project.detail",
+        "path": "pages/project/projects/:id",
+        "import": "@/pages/pages/project/project-detail-page",
+        "breadcrumb": "Project",
+        "nav": null
+      },
+      {
+        "id": "pages.project.tasks",
+        "path": "pages/project/tasks",
+        "import": "@/pages/pages/project/tasks-calendar-page",
+        "breadcrumb": "Tasks",
+        "nav": {
+          "section": "pages",
+          "group": "project",
+          "groupLabel": "Project",
+          "labelKey": "nav.pages.project.calendar",
+          "fallback": "Tasks",
+          "icon": "Calendar"
+        }
+      }
+    ]
+  },
+  "urls": {
+    "pages": {
+      "project": {
+        "root": "/app/pages/project",
+        "kanban": "/app/pages/project/kanban",
+        "projects": "/app/pages/project/projects",
+        "tasks": "/app/pages/project/tasks",
+        "gantt": "/app/pages/project/gantt",
+        "roadmap": "/app/pages/project/roadmap",
+        "sprint": "/app/pages/project/sprint",
+        "files": "/app/pages/project/files",
+        "timeTracking": "/app/pages/project/time-tracking",
+        "workload": "/app/pages/project/workload",
+        "reports": "/app/pages/project/reports",
+        "settings": "/app/pages/project/settings"
+      }
+    },
+    "dashboards": {
+      "project": "/app/dashboards/project"
+    }
+  }
+}

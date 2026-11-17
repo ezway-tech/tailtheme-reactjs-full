@@ -1,0 +1,19 @@
+{
+  "plugins": {
+    "deploy-on-aws": {
+      "enabled": true
+    },
+    "cursor-team-kit": {
+      "enabled": true
+    },
+    "gitlab": {
+      "enabled": true
+    },
+    "figma": {
+      "enabled": true
+    },
+    "cloudflare": {
+      "enabled": true
+    }
+  }
+}

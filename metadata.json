@@ -1,0 +1,18 @@
+{
+  "name": "TailTheme",
+  "description": "A modern React + Tailwind admin template built for fast product delivery and easy customization.",
+  "version": "0.3.0",
+  "stack": ["React 19", "TypeScript", "Vite 6", "Tailwind CSS 4", "Radix UI", "React Router 7"],
+  "features": [
+    "11 themed verticals including CRM",
+    "9 domain dashboards",
+    "40+ UI primitives and marketing blocks",
+    "Runtime theme customizer with 16 presets",
+    "Auth flows, onboarding, and settings suite",
+    "i18n (en, vi, fr)",
+    "Vitest, Playwright, axe accessibility smoke tests",
+    "In-app UI showcase (/app/ui)",
+    "Documentation: customization, components, tokens-overview"
+  ],
+  "requestFramePermissions": []
+}

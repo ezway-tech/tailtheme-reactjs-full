@@ -1,0 +1,14 @@
+{
+  "minimal": {
+    "description": "Export-only starter (Home + form). Not the public Lite repo.",
+    "modules": ["core"]
+  },
+  "project": {
+    "description": "Core starter plus Project sample module.",
+    "modules": ["core", "project"]
+  },
+  "lite": {
+    "description": "Public TailTheme React Lite — Free-scope pages and shell (no Pro teasers).",
+    "modules": ["lite"]
+  }
+}
